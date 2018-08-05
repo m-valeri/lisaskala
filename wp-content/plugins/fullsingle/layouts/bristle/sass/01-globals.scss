@@ -1,0 +1,63 @@
+//-------------------------------------------------------------------------------
+// Font Import
+//-------------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+//-------------------------------------------------------------------------------
+// Variables
+//-------------------------------------------------------------------------------
+
+// Fonts 
+$font-sans	: 'Roboto', Helvetica, Arial, sans-serif;
+
+// Colors
+$color-background 			: #FFFFFF;
+$color-page-border		 	: #FED0C5;
+$color-text					: #666666;
+$color-link					: #999999;
+$color-link-hover			: #333333; 
+$color-project-title		: #333333; 
+$color-project-category		: #999999;
+$color-contact-details		: #AAAAAA; 
+$color-copyright			: #FFFFFF;
+
+// Breakpoints
+$bp-smallish 		: 1200px;
+$bp-tablet 			: 800px;
+$bp-mobile 			: 500px;
+
+//-------------------------------------------------------------------------------
+// Fade In
+//-------------------------------------------------------------------------------
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
+
+//-------------------------------------------------------------------------------
+// Extends
+//-------------------------------------------------------------------------------
+
+%global-border-width {
+	border-width: 40px; 
+
+	@media (max-width: $bp-mobile  ) {
+		border-width: 20px;
+	}	
+}
+
+%global-padding {
+	padding: 80px 80px 20px 80px;
+
+	@media (max-width: $bp-smallish  ) {
+		padding: 60px 60px 20px 60px;
+	}	
+	@media (max-width: $bp-tablet  ) {
+		padding: 40px 40px 20px 40px;
+	}
+	@media (max-width: $bp-mobile  ) {
+		padding: 20px;
+	}	
+}

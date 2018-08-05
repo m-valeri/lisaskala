@@ -1,0 +1,188 @@
+//-------------------------------------------------------------------------------
+// Content
+//-------------------------------------------------------------------------------
+
+body.page-template-page-fullsingle-vitae {
+	background-color: $color-background; 
+	font-family: $font-sans;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 33px;
+	letter-spacing: -0.5px;
+	color: $color-text;
+	animation: fadein 2s;
+
+	//-------------------------------------------------------------------------------
+	// Site Origin Page Builder Global Styles
+	//-------------------------------------------------------------------------------
+
+	.panel-grid {
+		margin-bottom: 0 !important; // reset
+	}
+
+	p {
+		margin-bottom: 28px;
+		color: $color-text;
+
+	}
+
+	ul {
+		li {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
+		}
+	}
+
+	h3.widget-title {
+		font-weight: 600;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: $color-text-section-titles;
+		letter-spacing: 1px;
+	}
+
+	.panel-row-style {
+		padding: 160px;
+
+		@media (max-width: $bp-smallish ) {
+			padding: 80px;
+		}
+
+		@media (max-width: $bp-tablet ) {
+			padding: 60px;
+		}
+
+		@media (max-width: $bp-mobile ) {
+			padding: 40px;
+		}
+	}
+
+	.col-wider {
+		max-width: 66%;
+
+		@media (max-width: $bp-tablet ) {
+			max-width: 100%;
+		}
+	}
+
+	//-------------------------------------------------------------------------------
+	// About
+	//-------------------------------------------------------------------------------
+
+	.about {
+
+		img {
+			max-width: 160px;
+			height: auto;
+		}
+
+		h3.widget-title {
+			text-transform: none;
+			letter-spacing: -0.5px;
+			font-size: 32px;
+			line-height: 36px;
+			margin-bottom: 28px;
+			color: $color-text-intro;
+		}
+
+	}
+
+	//-------------------------------------------------------------------------------
+	// History & Networks
+	//-------------------------------------------------------------------------------
+
+	.history, .networks {
+		background-color: $color-background-work;
+		color: $color-text-work;
+
+		p {
+			color: $color-text-work;
+		}
+
+		a {
+			color: $color-text-work;
+
+			&:hover {
+				color: $color-text-work;
+			}
+		}
+
+		ul {
+			li {
+				list-style: none;
+				em {
+					color: $color-text-date;
+					padding-left: 24px;
+				}
+			}
+		}
+	}
+
+	.history.panel-row-style {
+		padding-bottom: 0;
+	}
+
+	//-------------------------------------------------------------------------------
+	// Contact
+	//-------------------------------------------------------------------------------
+
+	.contact {
+		background-color: $color-background-contact;
+		color: $color-text-contact;
+
+		p {
+			color: $color-text-contact;
+		}
+
+		a {
+			color: $color-text-contact;
+
+			&:hover {
+				color: $color-text-contact;
+			}
+		}
+
+		ul {
+			li {
+				list-style: none;
+			}
+		}		
+	}
+
+	//-------------------------------------------------------------------------------
+	// Copyright
+	//-------------------------------------------------------------------------------
+
+	.copyright {
+		padding: 20px 160px;
+		background-color: $color-background-copyright;
+		color: $color-text-copyright;
+
+		@media (max-width: $bp-smallish ) {
+			padding: 20px 80px;
+		}
+
+		@media (max-width: $bp-tablet ) {
+			padding: 20px 60px;
+		}
+
+		@media (max-width: $bp-mobile ) {
+			padding: 20px 40px;
+		}
+
+		p {
+			font-size: 13px;
+			line-height: 13px;
+			margin-bottom: 0;
+			color: $color-text-copyright;
+
+			a {
+				color: $color-text-copyright;
+			}
+
+		}	
+
+	}
+
+}
